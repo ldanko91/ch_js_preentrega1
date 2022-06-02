@@ -1,0 +1,87 @@
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-header {
+    display: flex !important;
+    align-self: flex-end;
+
+}
+
+.social-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre-navbar {
+    display: none;
+}
+
+.logo-navbar {
+    border-radius: 100%;
+}
+
+.portada{
+    background-image: url(../assets/portada3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-ideas{
+    background-color: rgb(224, 223, 223);
+}
+
+.carrusel-bg{
+    background-color: rgb(196, 196, 196);
+}
+
+.carrusel {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+/* .cuerpo {
+    display: grid;
+    grid-template-columns: repeat(12, 1r);
+    grid-template-rows: auto;
+} */
+
+#features {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 987px){
+    .cont-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-toggler {        
+        position: relative;
+        margin: 3px, 3px, 3px, 3px;
+    }
+
+    .nombre-navbar {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+    }
+    .nombre2-navbar {
+    display: flex;
+    justify-content: flex-end;
+    }
+
+}

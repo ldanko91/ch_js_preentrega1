@@ -1,0 +1,71 @@
+@import "tipografias";
+@import "colores";
+
+$estilo-mapa: (
+        color:crimson, 
+        centrado: center, 
+        tamano-fuente: 2rem,
+        negrita: bold
+);
+
+ul {
+    list-style: none;
+    li {
+        color: chocolate;
+        font-size: 2rem;
+        a{
+            color: rgb(236, 108, 133);
+            text-decoration: none;
+            &:hover {
+                color: darkred;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight:bolder;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+}
+
+header {
+    * {
+    font-size: xx-large;
+}
+}
+
+.estilo-map {
+    color: map-get($estilo-mapa, color);
+    text-align: map-get($estilo-mapa, centrado);
+    font-size: map-get($estilo-mapa, tamano-fuente);
+    font-weight: map-get($estilo-mapa, negrita);
+}
+
+.estilo-map--extend {
+    @extend .estilo-map;
+    font-size: 2.5rem;
+    color: darkred;
+}
+
+@mixin fondos($height, $background, $padding) {
+    height: $height;
+    background-color: $background;
+    padding: $padding;
+}
+
+.mixin1 {
+    @include fondos(3rem, #dfbfbf, 5px)
+}
+
+.mixin2 {
+    @include fondos(5rem, #9c9c9c, 10px)
+}
